@@ -1,4 +1,5 @@
 from typing import Dict, List
+from models.ingredient import Restriction
 
 from services.inventory_control import InventoryMapping
 from services.menu_data import MenuData
@@ -40,3 +41,10 @@ class MenuBuilder:
                 }
             )
         return menu
+
+
+if __name__ == "__main__":
+    menu = MenuBuilder()
+    print(menu.get_main_menu())
+    print("*" * 50)
+    print(menu.get_main_menu(Restriction.GLUTEN))
