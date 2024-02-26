@@ -39,3 +39,8 @@ class Dish:
 
     def get_ingredients(self):
         return set(self.recipe.keys())
+
+
+if __name__ == "__main__":
+    dish = Dish("dish", 10.0)
+    print(dish.get_restrictions())
