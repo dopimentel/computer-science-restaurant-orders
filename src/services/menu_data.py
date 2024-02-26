@@ -30,4 +30,4 @@ class MenuData:
 if __name__ == "__main__":
     menu = MenuData("data/menu_base_data.csv")
     for dish in menu.dishes:
-        print(dish.get_ingredients())
+        print(dish)
